@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #4c4cc7;
+  --sub-color: #eeeef4;
+  --font-white: #efedf7;
+  --font-dark: #413f58;
+  --min-height: 74px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 10rem;
+  width: 24rem;
+  border: 0.2px solid var(--bg-color);
+}
+
+h1.header,
+form,
+div.output {
+  padding: 1rem;
+}
+
+h1.header {
+  background-color: var(--bg-color);
+  color: var(--font-white);
+  min-height: var(--min-height);
+}
+
+form {
+  width: 65%;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+div.temperature-converter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form label,
+form input {
+  margin-bottom: 0.4rem;
+  color: var(--font-dark);
+}
+
+form input {
+  height: 30px;
+  padding: 0.5rem;
+}
+
+form select {
+  /* height: 30px; */
+  color: var(--font-dark);
+  padding: 8px;
+}
+
+select option {
+  margin-bottom: 0.2rem;
+}
+
+button.submit {
+  background-color: var(--bg-color);
+  color: var(--font-white);
+  padding: 8px 12px;
+  outline: none;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+div.output {
+  background-color: var(--sub-color);
+  font-size: 1.1rem;
+  min-height: var(--min-height);
+}
+
+div.output p {
+  color: var(--font-dark);
+}
+
+@media only screen and (max-width: 450px) {
+  main {
+    width: 20rem;
+    margin: 6rem auto;
+  }
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
